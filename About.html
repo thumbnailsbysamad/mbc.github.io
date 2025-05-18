@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>About Us - Modern Techniques</title>
+  <!-- Font Awesome 6 Free CDN -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-/1dc7bm5cs1PbbM+AQmAaYohzGoDCTM08oEiQMXwAhpbMuYyAPmZ1zCUmfP0+pgVXEyYjglPy5Mgm2gI0lb1Qw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <style>
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  background-color: #f6f9ff;
+  color: #1a1a1a;
+}
+
+.hero {
+  background: linear-gradient(to right, #003366, #005aa7);
+  color: #fff;
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  font-weight: 800;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-top: 1rem;
+}
+
+.about-section {
+  padding: 4rem 2rem;
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  align-items: center;
+  justify-content: center;
+}
+.about-img {
+  flex: 1 1 40%;
+  max-width: 90%;
+  height: auto;
+  border-radius: 12px;
+  display: block;
+  margin: auto;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.about-text {
+  flex: 1 1 55%;
+}
+
+
+.about-text h2 {
+  font-size: 2rem;
+  color: #003366;
+  margin-bottom: 1rem;
+}
+
+.about-text p {
+  font-size: 1rem;
+  line-height: 1.8;
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+.section-title {
+  text-align: center;
+  margin: 3rem 0 2rem;
+  font-size: 2rem;
+  font-weight: 700;
+  color: #003366;
+}
+
+.stats-section {
+  background: #fff;
+  padding: 4rem 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 2rem;
+  text-align: center;
+}
+
+.stat {
+  flex: 1 1 200px;
+}
+
+.stat h3 {
+  font-size: 2rem;
+  color: #003366;
+  margin-bottom: 0.5rem;
+}
+
+.stat p {
+  font-size: 1rem;
+  color: #666;
+}
+
+.approvals-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  padding: 3rem 2rem 5rem;
+}
+
+.approval-logo img {
+  width: 300px;
+  height: 69px;
+  object-fit: contain;
+  filter: drop-shadow(0 2px 4px rgba(0,0,0,0.1));
+  transition: transform 0.3s ease;
+}
+
+
+.approval-logo img:hover {
+  transform: scale(1.05);
+}
+
+.core-values {
+  padding: 3rem 2rem;
+  text-align: center;
+  background-color: #f0f7ff;
+}
+
+.core-values h3 {
+  font-size: 2rem;
+  color: #003366;
+  margin-bottom: 2rem;
+  font-weight: 800;
+}
+
+.values-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 2rem;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.value-box {
+  background: #ffffff;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+  transition: transform 0.3s;
+}
+
+.value-box:hover {
+  transform: translateY(-6px);
+}
+
+.value-box i {
+  font-size: 2.5rem;
+  color: #005aa7;
+  margin-bottom: 1rem;
+  display: block;
+}
+
+.value-box h4 {
+  color: #003366;
+  margin-bottom: 0.5rem;
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+
+.value-box p {
+  color: #444;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 2.2rem;
+  }
+
+  .about-section {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .about-img {
+    max-width: 80%;
+    height: auto;
+  }
+
+  .approvals-section {
+    flex-direction: column;
+  }
+}
+
+  </style>
+</head>
+<body>
+
+  <section class="hero">
+    <h1>We Build for the Future</h1>
+    <p>Modern Techniques Building Contracting LLC – Crafting lasting spaces with innovation & integrity</p>
+  </section>
+
+  <section class="about-section">
+    <img src="Images/ChatGPT Image May 18, 2025, 02_24_58 PM.png" alt="About Image" class="about-img">
+    <div class="about-text">
+      <h2>About Our Company</h2>
+      <p>Founded in 2022, Modern Techniques Building Contracting LLC is a UAE-based firm delivering specialized construction, renovation, and infrastructure services. Our commitment to excellence and cutting-edge techniques ensures every project is completed with precision and vision.</p>
+      <p>Our expertise spans industrial, commercial, and residential sectors, offering complete turnkey solutions that include structural engineering, architectural design, and interior fit-outs tailored to each client's unique goals.</p>
+    </div>
+  </section>
+
+ 
+<section class="core-values">
+  <h3>Our Core Values</h3>
+  <div class="values-grid">
+    <div class="value-box">
+      <i class="fas fa-lightbulb"></i>
+      <h4>Innovation</h4>
+      <p>Embracing new technologies and modern methods to deliver future-ready solutions.</p>
+    </div>
+    <div class="value-box">
+      <i class="fas fa-handshake"></i>
+      <h4>Integrity</h4>
+      <p>Transparent processes, honest communication, and consistent results are our foundation.</p>
+    </div>
+    <div class="value-box">
+      <i class="fas fa-award"></i>
+      <h4>Quality</h4>
+      <p>Every project is approached with attention to detail, premium materials, and strict standards.</p>
+    </div>
+    <div class="value-box">
+      <i class="fas fa-leaf"></i>
+      <h4>Sustainability</h4>
+      <p>Building responsibly with environmental awareness and sustainable practices in mind.</p>
+    </div>
+  </div>
+</section>
+
+
+  <h2 class="section-title">Our Statistics</h2>
+  <section class="stats-section">
+    <div class="stat">
+      <h3>3+</h3>
+      <p>Years of Experience</p>
+    </div>
+    <div class="stat">
+      <h3>60+</h3>
+      <p>Projects Completed</p>
+    </div>
+    <div class="stat">
+      <h3>17+</h3>
+      <p>Team Members</p>
+    </div>
+    <div class="stat">
+      <h3>100%</h3>
+      <p>Client Satisfaction</p>
+    </div>
+  </section>
+
+  <h2 class="section-title">Our Authority Approvals</h2>
+<div class="approvals-section">
+  <div class="approval-logo">
+    <img src="Images/1-300x69.png" alt="JAFZA" />
+  </div>
+  <div class="approval-logo">
+    <img src="Images/2-300x69.png" alt="Trakhees" />
+  </div>
+  <div class="approval-logo">
+    <img src="Images/3-2-300x69.png" alt="Dubai Municipality" />
+  </div>
+  <div class="approval-logo">
+    <img src="Images/5-2-300x69.png" alt="Civil Defense" />
+  </div>
+  <div class="approval-logo">
+    <img src="Images/ChatGPT Image May 18, 2025, 03_38_33 PM.png" alt="Trakhees Enhanced" />
+  </div>
+</div>
+
+</body>
+</html>

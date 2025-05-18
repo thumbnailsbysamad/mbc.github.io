@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Construction Company</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <script defer src="script.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-papxGzYOB+Po1xpsilnFnpzOZzXXCFH9gKZhv5uQXr0vYoHHevjzJmlNBozqX6+Kk2c0jqFJS1zk+8gI5X1LjA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="logo">
+      <img src="Images/new Logo.png" alt="Logo">
+    </div>
+    <div class="hamburger" id="hamburger">&#9776;</div>
+    <div class="nav-links" id="navLinks">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="blog.html">Blog</a>
+      <a href="services.html">Services</a>
+      <a href="#projects">Projects</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-overlay">
+      <div class="hero-content">
+        <h1>Building Tomorrow <br><span>With Excellence Today</span></h1>
+        <p>Delivering exceptional construction, design, and renovation solutions tailored to your vision and built to last.</p>
+        <div class="hero-buttons">
+          <a href="services.html" class="btn-primary">Our Services</a>
+          <a href="#projects" class="btn-secondary">View Projects</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="experience-section">
+  <!-- Section Heading -->
+  <h2 class="section-title">Our Legacy of Excellence</h2>
+
+  <!-- Stats -->
+  <div class="stats-bar">
+    <div class="stat-item">
+      <i class="fas fa-briefcase"></i>
+      <strong class="stat-count" data-count="3">3+</strong>
+      <p>Years of Experience</p>
+    </div>
+    <div class="stat-item">
+      <i class="fas fa-building"></i>
+      <strong class="stat-count" data-count="60">60+</strong>
+      <p>Projects Completed</p>
+    </div>
+    <div class="stat-item">
+      <i class="fas fa-people-carry"></i>
+      <strong class="stat-count" data-count="17">17+</strong>
+      <p>Man power</p>
+    </div>
+  </div>
+
+  <!-- Experience Content -->
+  <div class="experience-content">
+    <div class="experience-image">
+      <img src="Images/worker.png" alt="Construction workers">
+    </div>
+    <div class="experience-text">
+      <h2><span>3+ Years</span> of Proven Expertise</h2>
+      <p>Bringing over 3 years of industry experience to lead with vision, precision, and purpose.</p>
+      <p><strong>Syed Ateeq Ur Rahman</strong> – Director</p>
+    </div>
+  </div>
+
+  <!-- Workflow Section -->
+  <div class="workflow-section">
+    <h2 class="workflow-title">Our Process</h2>
+    <div class="workflow-grid">
+      <div class="workflow-step">
+        <i class="fas fa-pencil-ruler"></i>
+        <h3>1. Plan & Design</h3>
+        <p>Turning your vision into a buildable blueprint.</p>
+      </div>
+      <div class="workflow-step">
+        <i class="fas fa-hand-holding-usd"></i>
+        <h3>2. Budget & Materials</h3>
+        <p>Clarity on costs, materials, and timelines.</p>
+      </div>
+      <div class="workflow-step">
+        <i class="fas fa-hard-hat"></i>
+        <h3>3. Precision Execution</h3>
+        <p>Engineered with care, built to perform.</p>
+      </div>
+      <div class="workflow-step">
+        <i class="fas fa-thumbs-up"></i>
+        <h3>4. On-Time Handover</h3>
+        <p>Ready-to-use delivery with final walkthrough.</p>
+      </div>
+    </div>
+  </div>
+</section>
+    <section id="projects" class="projects-section">
+  <h2 class="section-title">Our Featured Projects</h2>
+  <div class="project-marquee">
+    <div class="marquee-track">
+      <!-- Project Cards -->
+      <div class="project-card" onclick="openLightbox(this)"><img src="Images/WhatsApp Image 2025-05-08 at 01.06.27_04c74f5a.jpg" alt="Project 1"></div>
+      <div class="project-card" onclick="openLightbox(this)"><img src="Images/WhatsApp Image 2025-05-08 at 01.06.28_69ef3528.jpg" alt="Project 2"></div>
+      <div class="project-card" onclick="openLightbox(this)"><img src="Images/WhatsApp Image 2025-05-08 at 01.06.28_aa3658d1.jpg" alt="Project 3"></div>
+      <div class="project-card" onclick="openLightbox(this)"><img src="Images/WhatsApp Image 2025-05-08 at 01.06.29_3e8b7ee2.jpg" alt="Project 4"></div>
+      <div class="project-card" onclick="openLightbox(this)"><img src="Images/WhatsApp Image 2025-05-08 at 01.06.29_74455f2f.jpg" alt="Project 5"></div>
+      <div class="project-card" onclick="openLightbox(this)"><img src="Images/WhatsApp Image 2025-05-08 at 01.06.30_2961f9bd.jpg" alt="Project 6"></div>
+      <div class="project-card" onclick="openLightbox(this)"><img src="Images/WhatsApp Image 2025-05-08 at 01.06.30_e680e3e8.jpg" alt="Project 7"></div>
+      <div class="project-card" onclick="openLightbox(this)"><img src="Images/WhatsApp Image 2025-05-08 at 01.06.31_0b20eb73.jpg" alt="Project 8"></div>
+      <div class="project-card" onclick="openLightbox(this)"><img src="Images/WhatsApp Image 2025-05-08 at 01.06.40_635a0ebd.jpg" alt="Project 9"></div>
+      <div class="project-card" onclick="openLightbox(this)"><img src="Images/WhatsApp Image 2025-05-08 at 01.06.45_8d44ee86.jpg" alt="Project 10"></div>
+      <div class="project-card" onclick="openLightbox(this)"><img src="Images/WhatsApp Image 2025-05-08 at 01.06.45_370a5447.jpg" alt="Project 11"></div>
+      <div class="project-card" onclick="openLightbox(this)"><img src="Images/WhatsApp Image 2025-05-08 at 01.06.47_9246fa2a.jpg" alt="Project 12"></div>
+      <div class="project-card" onclick="openLightbox(this)"><img src="Images/WhatsApp Image 2025-05-08 at 01.06.49_bb4ed0c8.jpg" alt="Project 13"></div>
+      <div class="project-card" onclick="openLightbox(this)"><img src="Images/WhatsApp Image 2025-05-08 at 01.06.49_eabc5baf.jpg" alt="Project 14"></div>
+    </div>
+  </div>
+  <h2 class="centered-text">
+  "Discover the exceptional services we offer to our valued clients. Explore what sets us apart and how we can elevate your experience!"
+</h2>
+
+  <!-- Lightbox Modal -->
+  <div id="lightbox" class="lightbox" onclick="closeLightbox()">
+    <img id="lightbox-img" class="lightbox-content" />
+    <span class="lightbox-close" onclick="closeLightbox()">&times;</span>
+  </div>
+</section>
+<section class="why-choose-us">
+  <h2 class="why-title">WHY CHOOSE US?</h2>
+  <div class="reasons image-only">
+    <div class="reason-img"><img src="Images/Fast_Delivery__10_-removebg-preview.png" alt="Top Quality"></div>
+    <div class="reason-img"><img src="Images/Fast_Delivery__6_-removebg-preview.png" alt="ISO Certified"></div>
+    <div class="reason-img"><img src="Images/Fast_Delivery__7_-removebg-preview.png" alt="24/7 Support"></div>
+    <div class="reason-img"><img src="Images/Fast_Delivery__8_-removebg-preview.png" alt="Best Value"></div>
+    <div class="reason-img"><img src="Images/Fast_Delivery__9_-removebg-preview.png" alt="Timely Delivery"></div>
+  </div>
+</section>
+<section class="hero-slideshow">
+  <div class="slideshow-images">
+    <img src="Images/image-engineering-objects-workplace-top-view-construction-concept-engineering-tools-vintage-tone-retro-filter-effect-soft-focus-selective-focus.jpg" class="slide active" alt="Slide 1">
+    <img src="Images/mumbai-skyline-skyscrapers-construction.jpg" class="slide" alt="Slide 2">
+    <img src="Images/observation-urban-building-business-steel.jpg" class="slide" alt="Slide 3">
+    <!-- Add more images as needed -->
+  </div>
+
+  <div class="hero-overlay">
+    <div class="hero-text">
+      <h1>Designing the Future of UAE <br><span>Construction</span></h1>
+      <p>We bring your vision to life with safety, quality, and innovation.</p>
+      <a href="contact.html" class="btn-slide">Request a Quote</a>
+    </div>
+  </div>
+</section>
+<section class="client-reviews-section">
+  <h2 class="client-review-title">What Our Clients Say</h2>
+  <div class="client-reviews-wrapper">
+    <div class="client-reviews-track">
+      
+      <!-- Review Cards (6 to 15 shown here) -->
+      <div class="client-review-card">
+        <img src="https://randomuser.me/api/portraits/women/36.jpg" alt="Sarah K." class="client-photo" />
+        <h3>Sarah K.</h3>
+        <p>"They transformed our outdated office into a modern masterpiece. Highly satisfied!"</p>
+        <div class="stars">★★★★★</div>
+      </div>
+
+      <div class="client-review-card">
+        <img src="https://randomuser.me/api/portraits/men/45.jpg" alt="Ahmed Z." class="client-photo" />
+        <h3>أحمد ز.</h3>
+        <p>"دقة في التنفيذ، والتزام تام بالمعايير الهندسية. شركة رائعة!"</p>
+        <div class="stars">★★★★★</div>
+      </div>
+
+      <div class="client-review-card">
+        <img src="https://randomuser.me/api/portraits/women/33.jpg" alt="Isabelle M." class="client-photo" />
+        <h3>Isabelle M.</h3>
+        <p>"Professional from start to finish. Transparent, honest, and very creative."</p>
+        <div class="stars">★★★★★</div>
+      </div>
+
+      <div class="client-review-card">
+        <img src="https://randomuser.me/api/portraits/men/35.jpg" alt="Ali R." class="client-photo" />
+        <h3>علي ر.</h3>
+        <p>"اهتمام فائق بالتفاصيل، وفريق عمل متعاون جداً."</p>
+        <div class="stars">★★★★★</div>
+      </div>
+
+      <div class="client-review-card">
+        <img src="https://randomuser.me/api/portraits/women/19.jpg" alt="Clara J." class="client-photo" />
+        <h3>Clara J.</h3>
+        <p>"The best team we’ve ever worked with — they actually care about your vision."</p>
+        <div class="stars">★★★★★</div>
+      </div>
+
+      <div class="client-review-card">
+        <img src="https://randomuser.me/api/portraits/men/18.jpg" alt="Youssef M." class="client-photo" />
+        <h3>يوسف م.</h3>
+        <p>"تعاملهم ممتاز، وفريقهم دائمًا متجاوب وسريع الرد."</p>
+        <div class="stars">★★★★★</div>
+      </div>
+
+      <div class="client-review-card">
+        <img src="https://randomuser.me/api/portraits/women/58.jpg" alt="Aisha H." class="client-photo" />
+        <h3>Aisha H.</h3>
+        <p>"The results exceeded expectations. I’m still amazed at the transformation!"</p>
+        <div class="stars">★★★★★</div>
+      </div>
+
+      <div class="client-review-card">
+        <img src="https://randomuser.me/api/portraits/men/48.jpg" alt="Khaled A." class="client-photo" />
+        <h3>خالد أ.</h3>
+        <p>"شركة محترفة بكل ما تعنيه الكلمة. تجربة ناجحة وموفقة."</p>
+        <div class="stars">★★★★★</div>
+      </div>
+
+      <div class="client-review-card">
+        <img src="https://randomuser.me/api/portraits/women/62.jpg" alt="Maya N." class="client-photo" />
+        <h3>Maya N.</h3>
+        <p>"We were blown away by their creativity and execution. Worth every penny!"</p>
+        <div class="stars">★★★★★</div>
+      </div>
+
+      <div class="client-review-card">
+        <img src="https://randomuser.me/api/portraits/men/50.jpg" alt="Faisal S." class="client-photo" />
+        <h3>فيصل س.</h3>
+        <p>"من أفضل الشركات التي تعاملت معها. جودة عالية ومصداقية."</p>
+        <div class="stars">★★★★★</div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section class="offer-section">
+  <div class="offer-wrapper">
+    <div class="offer-image">
+      <img src="Images/smiling-construction-engineer-posing-with-arms-crossed-isolated-grey-background-removebg-preview-Picsart-AiImageEnhancer.png" alt="Professional Worker" />
+    </div>
+    <div class="offer-content">
+      <h2>What We Also Offer</h2>
+      <p>
+        We ensure high quality and timely delivery that goes beyond expectations,
+        tailored for industries, institutions, and modern living.
+      </p>
+
+      <div class="offer-list">
+        <div class="offer-item">
+          <i class="fas fa-paint-roller"></i>
+          <h4>Interior Design & Decoration</h4>
+        </div>
+        <div class="offer-item">
+          <i class="fas fa-boxes"></i>
+          <h4>Supply & Erection of Racking System</h4>
+        </div>
+        <div class="offer-item">
+          <i class="fas fa-industry"></i>
+          <h4>Converting Warehouses to Factories</h4>
+        </div>
+        <div class="offer-item">
+          <i class="fas fa-tools"></i>
+          <h4>Replacement Roof & Wall Cladding</h4>
+        </div>
+        <div class="offer-item">
+          <i class="fas fa-drafting-compass"></i>
+          <h4>Fabrication & Erection of Steel Structures</h4>
+        </div>
+        <div class="offer-item">
+          <i class="fas fa-project-diagram"></i>
+          <h4>Design Approval of Piling & Shoring</h4>
+        </div>
+        <div class="offer-item">
+          <i class="fas fa-draw-polygon"></i>
+          <h4>Drawings: Architecture, Structural, MEP with BIM</h4>
+        </div>
+        <div class="offer-item">
+          <i class="fas fa-city"></i>
+          <h4>JAFZA & Tarakhees Design Approvals</h4>
+        </div>
+      </div>
+
+      <a href="#" class="offer-button">Discover More →</a>
+    </div>
+  </div>
+</section>
+<footer class="lux-footer">
+  <div class="lux-footer-content">
+    <div class="lux-footer-section">
+      <h4>Our Services</h4>
+      <ul>
+        <li><a href="#">General Contracting</a></li>
+        <li><a href="#">Steel Structures</a></li>
+        <li><a href="#">Interior Fit-outs</a></li>
+      </ul>
+    </div>
+    <div class="lux-footer-section">
+      <h4>Useful Links</h4>
+      <ul>
+        <li><a href="About.html">About Us</a></li>
+        <li><a href="#">Privacy Policy</a></li>
+        <li><a href="#">Terms of Use</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+    <div class="lux-footer-section">
+      <h4>Contact Info</h4>
+      <p>
+        Modern Techniques Building Contracting LLC<br>
+        502 Al Ameri Tower, Internet City,<br>
+        Dubai, U.A.E.<br>
+        P.O.Box: 26130<br>
+        <a href="mailto:info@mtbc.com">info@mtbc.com</a>
+      </p>
+    </div>
+  </div>
+
+  <div class="lux-footer-bottom">
+    <div class="lux-footer-left">
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="About.html">About</a></li>
+        <li><a href="#">Blog</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+    <div class="lux-footer-right">
+      <p>© 2024 MTBC. All rights reserved. Developed by <a href="#">MTBC Team</a></p>
+      <div class="lux-social-icons">
+        <a href="#"><i class="fab fa-whatsapp"></i></a>
+        <a href="mailto:info@mtbc.com"><i class="fas fa-envelope"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+      </div>
+    </div>
+  </div>
+</footer>
+  <!-- WhatsApp Button -->
+  <a href="https://wa.me/919908884712" class="whatsapp-float" target="_blank">
+    <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp" width="50" height="50">
+  </a>
+
+</body>
+</html>

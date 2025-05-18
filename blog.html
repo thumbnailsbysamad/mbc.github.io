@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Blog - Modern Techniques</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html, body {
+      max-width: 100%;
+      overflow-x: hidden;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: #f0f4fa;
+      color: #1a1a1a;
+    }
+
+    .blog-header {
+      background: linear-gradient(to right, #003366, #005aa7);
+      color: white;
+      padding: 4rem 1.5rem;
+      text-align: center;
+    }
+
+    .blog-header h1 {
+      font-size: 2.8rem;
+      font-weight: 800;
+    }
+
+    .blog-header p {
+      font-size: 1.1rem;
+      margin-top: 0.8rem;
+      color: #d0e5ff;
+    }
+
+    .blog-container {
+      max-width: 1200px;
+      margin: 3rem auto;
+      padding: 0 1rem;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 2rem;
+    }
+
+    .blog-card {
+      background-color: #fff;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+      transition: transform 0.3s, box-shadow 0.3s;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .blog-card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 12px 28px rgba(0, 0, 0, 0.1);
+    }
+
+    .blog-card img {
+      width: 100%;
+      height: 220px;
+      object-fit: cover;
+      display: block;
+    }
+
+    .blog-content {
+      padding: 1.5rem;
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .blog-content h3 {
+      color: #003366;
+      font-size: 1.4rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .blog-meta {
+      font-size: 0.85rem;
+      color: #777;
+      margin-bottom: 1rem;
+    }
+
+    .blog-content p {
+      font-size: 1rem;
+      color: #444;
+      line-height: 1.6;
+      flex-grow: 1;
+    }
+
+    .read-more {
+      display: inline-block;
+      margin-top: 1.2rem;
+      color: #005aa7;
+      font-weight: 600;
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+
+    .read-more:hover {
+      color: #003366;
+    }
+
+    @media (max-width: 768px) {
+      .blog-header h1 {
+        font-size: 2.2rem;
+      }
+
+      .blog-header p {
+        font-size: 1rem;
+      }
+
+      .blog-container {
+        padding: 0 1rem;
+      }
+
+      .blog-card img {
+        height: 180px;
+      }
+
+      .blog-content h3 {
+        font-size: 1.2rem;
+      }
+
+      .blog-content p {
+        font-size: 0.95rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <section class="blog-header">
+    <h1>Blog of the Day</h1>
+    <p>Get expert insights, ideas, and updates from the world of construction.</p>
+  </section>
+
+  <section class="blog-container">
+    <div class="blog-card">
+      <img src="https://images.unsplash.com/photo-1581090700227-1cbcb5d4e06e?auto=format&fit=crop&w=1200&q=80" alt="Steel Structures">
+      <div class="blog-content">
+        <h3>The Rise of Steel Structures in Modern Construction</h3>
+        <div class="blog-meta">May 18, 2025 • Engineering</div>
+        <p>Steel structures are reshaping the construction industry with unmatched durability, cost-efficiency, and design flexibility across commercial and residential projects.</p>
+        <a href="#" class="read-more">Read More →</a>
+      </div>
+    </div>
+
+    <div class="blog-card">
+      <img src="https://images.unsplash.com/photo-1615873968403-89f3e6ef4a67?auto=format&fit=crop&w=1200&q=80" alt="Interior Design">
+      <div class="blog-content">
+        <h3>Interior Design Trends Dominating 2025</h3>
+        <div class="blog-meta">May 18, 2025 • Interior</div>
+        <p>Explore how open layouts, natural materials, and smart tech are revolutionizing modern interior design, making spaces more livable and functional.</p>
+        <a href="#" class="read-more">Read More →</a>
+      </div>
+    </div>
+
+    <div class="blog-card">
+      <img src="https://images.unsplash.com/photo-1560185127-6ed85a4d9f77?auto=format&fit=crop&w=1200&q=80" alt="Turnkey Projects">
+      <div class="blog-content">
+        <h3>Why Turnkey Projects Are the Future</h3>
+        <div class="blog-meta">May 18, 2025 • Project Delivery</div>
+        <p>Turnkey solutions allow clients to receive a ready-to-operate facility. Learn how this approach is saving time, money, and coordination headaches.</p>
+        <a href="#" class="read-more">Read More →</a>
+      </div>
+    </div>
+
+    <div class="blog-card">
+      <img src="https://images.unsplash.com/photo-1618005198919-d3d4e7e1bbd6?auto=format&fit=crop&w=1200&q=80" alt="Sustainability">
+      <div class="blog-content">
+        <h3>Green Construction: Beyond the Buzzword</h3>
+        <div class="blog-meta">May 18, 2025 • Sustainability</div>
+        <p>Going green in construction is about reducing carbon footprint, recycling materials, and building energy-efficient spaces that stand the test of time.</p>
+        <a href="#" class="read-more">Read More →</a>
+      </div>
+    </div>
+  </section>
+
+</body>
+</html>

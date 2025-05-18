@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Our Services - Modern Techniques</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: #f6f9ff;
+      color: #1a1a1a;
+      padding: 0 20px;
+    }
+
+    .header {
+      text-align: center;
+      padding: 60px 20px 30px;
+    }
+
+    .header h1 {
+      font-size: 3rem;
+      color: #003366;
+      margin-bottom: 15px;
+      font-weight: 800;
+    }
+
+    .header p {
+      font-size: 1.1rem;
+      max-width: 750px;
+      margin: 0 auto;
+      color: #444;
+    }
+
+    .services-section {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 35px;
+      padding: 40px 0;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .service-card {
+      background-color: #ffffff;
+      border: 2px solid #005aa7;
+      border-radius: 15px;
+      overflow: hidden;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      box-shadow: 0 8px 24px rgba(0, 90, 167, 0.05);
+    }
+
+    .service-card:hover {
+      transform: scale(1.03);
+      box-shadow: 0 8px 28px rgba(0, 90, 167, 0.2);
+    }
+
+    .service-card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      display: block;
+    }
+
+    .service-info {
+      padding: 20px;
+    }
+
+    .service-info h3 {
+      color: #003366;
+      font-size: 1.2rem;
+      margin-bottom: 10px;
+    }
+
+    .service-info p {
+      font-size: 0.95rem;
+      color: #444;
+    }
+
+    .highlight-strip {
+      background: linear-gradient(to right, #003366, #005aa7);
+      color: white;
+      padding: 4rem 2rem;
+      text-align: center;
+      margin-top: 4rem;
+    }
+
+    .highlight-strip h2 {
+      font-size: 2.4rem;
+      margin-bottom: 2rem;
+      font-weight: 700;
+      letter-spacing: 0.5px;
+    }
+
+    .cta-button {
+      display: inline-block;
+      padding: 14px 36px;
+      font-size: 1rem;
+      font-weight: 600;
+      border-radius: 30px;
+      color: white;
+      background-color: #ffffff10;
+      border: 2px solid #ffffff;
+      text-decoration: none;
+      backdrop-filter: blur(10px);
+      transition: all 0.3s ease;
+    }
+
+    .cta-button:hover {
+      background-color: #ffffff;
+      color: #003366;
+      border-color: #ffffff;
+      transform: translateY(-2px);
+    }
+
+    @media (max-width: 600px) {
+      .header h1 {
+        font-size: 2.2rem;
+      }
+
+      .highlight-strip h2 {
+        font-size: 1.6rem;
+        padding: 0 1rem;
+      }
+
+      .cta-button {
+        padding: 12px 28px;
+        font-size: 0.95rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <div class="header">
+    <h1>Our Services</h1>
+    <p>We specialize in a wide range of services in construction, engineering, and design. Below are the core services we offer to our clients.</p>
+  </div>
+
+  <!-- Services Grid -->
+  <section class="services-section">
+    <div class="service-card">
+      <img src="Images/steel_structure.jpg" alt="Steel Structure">
+      <div class="service-info">
+        <h3>Steel Structure Engineering</h3>
+        <p>Expert design and installation of steel structures for industrial and commercial buildings.</p>
+      </div>
+    </div>
+
+    <div class="service-card">
+      <img src="Images/greenfield.jpg" alt="Greenfield Liquid">
+      <div class="service-info">
+        <h3>Turnkey Projects</h3>
+        <p>Complete project management and execution, from conceptualization to final handover.</p>
+      </div>
+    </div>
+
+    <div class="service-card">
+      <img src="Images/home_style.jpg" alt="Home Style Engineering">
+      <div class="service-info">
+        <h3>Residential Engineering</h3>
+        <p>Design and engineering for luxury homes, with attention to detail and style.</p>
+      </div>
+    </div>
+
+    <div class="service-card">
+      <img src="Images/fitout_work.jpg" alt="Fit Out Work">
+      <div class="service-info">
+        <h3>Interior Fit-Outs</h3>
+        <p>High-quality interior fit-out solutions for offices, retail stores, and commercial spaces.</p>
+      </div>
+    </div>
+
+    <div class="service-card">
+      <img src="Images/industrial_medical.jpg" alt="Industrial & Medical Projects">
+      <div class="service-info">
+        <h3>Industrial & Medical Solutions</h3>
+        <p>Specialized engineering and construction for medical facilities and industrial plants.</p>
+      </div>
+    </div>
+
+    <div class="service-card">
+      <img src="Images/project_proposed.jpg" alt="Proposed Projects">
+      <div class="service-info">
+        <h3>Proposed Projects</h3>
+        <p>Providing feasibility studies and proposal development for new and upcoming projects.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="highlight-strip">
+    <h2>Have a Project or Idea in Mind?</h2>
+    <a href="contact.html" class="cta-button">Let’s Talk →</a>
+  </section>
+
+</body>
+</html>
