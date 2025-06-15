@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Blog - Building Dreams</title>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <title>Contact Us | Modern Techniques</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/yourkitid.js" crossorigin="anonymous"></script>
   <style>
     * {
       margin: 0;
@@ -14,143 +15,217 @@
 
     body {
       font-family: 'Inter', sans-serif;
-      background-color: #f4faff;
+      background: #f4f8ff;
       color: #1a1a1a;
-      padding: 2rem;
     }
 
-    .hero {
-      text-align: left;
-      max-width: 900px;
+    .contact-hero {
+      background: linear-gradient(to right, #003366, #005aa7);
+      color: #fff;
+      padding: 80px 20px 60px;
+      text-align: center;
+    }
+
+    .contact-hero h1 {
+      font-size: 2.5rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .contact-hero p {
+      font-size: 1.1rem;
+      max-width: 720px;
+      margin: 0 auto;
+    }
+
+    .contact-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 2rem;
+      padding: 4rem 2rem;
+      background: #ffffff;
+      max-width: 1200px;
       margin: auto;
     }
 
-    .hero h1 {
-      font-family: 'Playfair Display', serif;
-      font-size: 3rem;
-      line-height: 1.3;
-      color: #003366;
-      margin-bottom: 1rem;
+    .contact-left {
+      flex: 1 1 500px;
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
     }
 
-    .hero p, .hero ul, .hero blockquote {
-      font-size: 1.05rem;
-      line-height: 1.8;
-      margin-bottom: 1.5rem;
-      color: #333;
-    }
-
-    .hero ul {
-      padding-left: 1.5rem;
-    }
-
-    .hero li {
-      margin-bottom: 0.8rem;
-    }
-
-    .highlight {
-      font-weight: 600;
-      color: #005aa7;
-    }
-
-    blockquote {
-      border-left: 4px solid #005aa7;
-      padding-left: 1rem;
-      color: #555;
-      font-style: italic;
-    }
-
-    .contact {
-      background-color: wheat;
-      color: white;
+    .contact-form,
+    .contact-info {
+      background: #eaf1fb;
+      border-radius: 10px;
       padding: 2rem;
-      border-radius: 12px;
-      margin-top: 3rem;
+      box-shadow: 0 0 20px rgba(0, 90, 167, 0.08);
     }
 
-    .contact h3 {
+    .contact-form h2,
+    .contact-info h2 {
+      color: #003366;
       font-size: 1.5rem;
       margin-bottom: 1rem;
     }
 
-    .contact p {
-      margin: 0.5rem 0;
+    .contact-form form {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+
+    .input-group {
+      display: flex;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+
+    .input-group input {
+      flex: 1;
+      min-width: 180px;
+    }
+
+    input, textarea {
+      padding: 12px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      font-size: 1rem;
+      width: 100%;
+      background: #fff;
+      color: #333;
+    }
+
+    input:focus,
+    textarea:focus {
+      outline: 2px solid #005aa7;
+    }
+
+    .contact-form button {
+      background: #005aa7;
+      color: #fff;
+      padding: 14px;
+      font-size: 1rem;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    .contact-form button:hover {
+      background: #003366;
+    }
+
+    .contact-info p {
+      color: #333;
+      font-size: 1rem;
+      margin-bottom: 0.8rem;
+    }
+
+    .contact-info i {
+      margin-right: 10px;
+      color: #005aa7;
+    }
+
+    .lux-social-icons {
+      margin-top: 1rem;
+    }
+
+    .lux-social-icons a {
+      color: #005aa7;
+      font-size: 1.1rem;
+      margin-right: 15px;
+      transition: color 0.3s;
+    }
+
+    .lux-social-icons a:hover {
+      color: #003366;
+    }
+
+    .contact-map {
+      flex: 1 1 400px;
+    }
+
+    .contact-map iframe {
+      width: 100%;
+      height: 100%;
+      min-height: 600px;
+      border: 0;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    @media (max-width: 768px) {
+      .contact-hero h1 {
+        font-size: 2rem;
+      }
+
+      .contact-container {
+        padding: 2rem 1rem;
+        flex-direction: column;
+      }
+
+      .contact-form,
+      .contact-info {
+        padding: 1.5rem;
+      }
+
+      .contact-map iframe {
+        height: 350px;
+      }
+
+      .input-group {
+        flex-direction: column;
+      }
     }
   </style>
 </head>
 <body>
-  <section class="hero">
-    <h1>🎗️ Building Dreams: How Modern Construction Is Reshaping Our Future</h1>
-    <p><strong>Welcome to the World of Modern Construction</strong></p>
-    <p>Construction isn’t just about bricks, concrete, and steel anymore—it’s about vision, innovation, and turning dreams into lasting reality. Whether it’s a cozy home, a stylish office, or a high-tech commercial complex, modern construction blends technology with craftsmanship to build spaces that inspire and endure.</p>
-    <p>At <span class="highlight">MTBC</span>, we believe that every project is more than just a structure—it’s a story in the making.</p>
 
-    <p><strong>🛠️ From Blueprint to Reality: The Art Behind Every Structure</strong></p>
-    <p>Have you ever passed by a towering building and wondered how it started?</p>
-    <p>Every structure begins with a vision. That vision becomes a blueprint, the blueprint becomes a plan, and the plan becomes action. But it’s the details, the craftsmanship, and the people behind it that bring it all to life.</p>
-    <ul>
-      <li>✏️ Design thinking – to understand your needs and lifestyle</li>
-      <li>📐 Architectural precision – to ensure safety and sustainability</li>
-      <li>🎗️ Engineering excellence – to bring durability and strength</li>
-      <li>⚙️ Modern techniques – to deliver fast, cost-effective results</li>
-    </ul>
-
-    <p><strong>🌍 Building Smarter, Safer, Greener</strong></p>
-    <ul>
-      <li>Eco-friendly materials</li>
-      <li>Smart home automation integration</li>
-      <li>Energy-efficient designs</li>
-      <li>Waste reduction and responsible disposal</li>
-      <li>Solar-ready infrastructure</li>
-    </ul>
-    <blockquote>
-      ✅ "We don’t build for the moment; we build for generations."
-    </blockquote>
-
-    <p><strong>👷 Our Team: The Backbone of Every Project</strong></p>
-    <p>Behind every successful project is a team of passionate engineers, architects, masons, electricians, designers, and on-site workers. Our team brings together years of experience and next-gen innovation to create spaces that are both beautiful and functional.</p>
-    <p>We don’t treat our clients as customers—we treat them as <strong>partners</strong>. Your ideas matter. Your feedback is our blueprint.</p>
-
-    <p><strong>🏡 What We Build</strong></p>
-    <ul>
-      <li>Residential homes and villas – Modern, traditional, duplex, custom builds</li>
-      <li>Commercial properties – Offices, showrooms, malls, co-working spaces</li>
-      <li>Renovation and remodeling – Transforming old into bold</li>
-      <li>Interior works – From stunning ceilings to smart lighting and modular kitchens</li>
-      <li>Landscaping and outdoor – Gardens, patios, walkways, and more</li>
-    </ul>
-
-    <p><strong>💡 Real People, Real Stories</strong></p>
-    <blockquote>
-      “They turned my empty plot into a dream house, and the process was smoother than I ever expected.” – Mrs. Anjali R., Hyderabad
-    </blockquote>
-    <blockquote>
-      “Professional, transparent, and creative – I highly recommend MTBC for any construction project.” – Mr. Faisal K., Gachibowli
-    </blockquote>
-
-    <p><strong>🔍 Why Choose MTBC?</strong></p>
-    <ul>
-      <li>✅ Transparent pricing</li>
-      <li>✅ Timely delivery</li>
-      <li>✅ Quality-assured materials</li>
-      <li>✅ 3D visualization before execution</li>
-      <li>✅ Dedicated project manager for every build</li>
-      <li>✅ Full compliance with building laws and safety standards</li>
-    </ul>
-
-    <section class="contact">
-      <h3>📲 Let’s Build Something Beautiful Together</h3>
-      <p>Are you planning a home? Thinking about a commercial space? Looking to renovate? Let’s talk.</p>
-      <p>📞 Call us: 971 588163726</p>
-      <p>📧 Email: @info@mtbcuae.com</p>
-      <p>📍 Visit: 502 Al Ameri Tower, Internet City, Dubai, U.A.E.</p>
-      <p>🟢 Chat with us on WhatsApp: <a href="https://wa.me/971588163726" target="_blank">WhatsApp Link</a>
-</p>
-    </section>
-
-    <p><strong>🧱️ Construction Isn’t Just Our Job—It’s Our Passion</strong></p>
-    <p>At the end of the day, we don’t just build walls, floors, and roofs—we build trust. We build comfort. We build dreams. Your dream deserves more than just a builder—it deserves a team that’s committed, creative, and competent.</p>
-    <p><strong>Let’s lay the first brick today.</strong></p>
+  <section class="contact-hero">
+    <h1>Contact Us</h1>
+    <p>Let’s build something amazing together. Reach out to us for any inquiries or consultations.</p>
   </section>
+
+  <section class="contact-container">
+    <div class="contact-left">
+      <div class="contact-form">
+        <h2>Send Us a Message</h2>
+        <form>
+          <div class="input-group">
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+          </div>
+          <input type="text" placeholder="Subject" required>
+          <textarea rows="5" placeholder="Your Message" required></textarea>
+          <button type="submit">Send Message</button>
+        </form>
+      </div>
+
+      <div class="contact-info">
+        <h2>Get in Touch</h2>
+        <p><i class="fas fa-map-marker-alt"></i> 502 Al Ameri Tower, Internet City, Dubai, U.A.E.</p>
+        <p><i class="fas fa-phone-alt"></i> +971 45689737</p>
+        <p><i class="fas fa-phone-alt"></i> +971 588163726</p>
+        <p><i class="fas fa-envelope"></i> info@mtbc-uae.com</p>
+        <div class="lux-social-icons">
+          <a href="#"><i class="fab fa-whatsapp"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="contact-map">
+      <iframe 
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3609.725644336547!2d55.180272775247746!3d25.101106132830267!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f6c6dc4dfc2db%3A0x541e9df7a5bdbac6!2sAl%20Ameri%20Tower%2C%20Dubai%20Internet%20City%20-%20Dubai!5e0!3m2!1sen!2sae!4v1681123456789!5m2!1sen!2sae"
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+        allowfullscreen>
+      </iframe>
+    </div>
+  </section>
+
 </body>
 </html>
